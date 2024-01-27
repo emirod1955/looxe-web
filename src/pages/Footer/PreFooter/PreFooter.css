@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;   
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.preFooter{
+    font-family: 'Inter', sans-serif;
+}
+
+.preFooterBoxes img{
+    width: 4rem;
+}
+
+.preFooterBoxes{
+     display: flex;
+     justify-content: space-around;
+     padding: 5rem 0;
+}
+
+.preFooterBoxes h4{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.preFooterBoxes p{
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.preFooterBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+.socialNetworks img{
+    width: 1.8rem;
+}
+
+.footerNavigation{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNavigationColumn{
+    display: flex;
+    flex-direction: column;
+    margin: 0 8rem;
+}
+
+.newspaperFooter{
+    margin-left: 8rem;
+}
+
+.footerNavigation a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+.footerNavigationColumn h2{
+    font-weight: 900;
+}
+
+.footerNavigation{
+    padding: 5rem 0;
+}
+
+.socialNetworks{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#contactMail{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.socialNetworks{
+    margin-top: 1rem;
+}
+
+.footerNavigationColumn h3{
+    font-weight: 700;
+}
+
+.newspaperFooter input{
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+.newspaperFooter p{
+    font-size: 1.4rem;
+}
+
+.foooternavigationColumn:first-child{
+    margin-bottom: .5rem;
+}
+
+.footerNavigationColumn a{
+    margin: .2rem 0;
+}
+
+#footerNavigationColumnTitle{
+    margin: 0;
+}

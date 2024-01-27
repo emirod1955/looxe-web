@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+.home{
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.headerBackground{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    z-index: -1;
+}
+
+.headerLeft{
+    width: 50%;
+    height: 100%;
+    background-color: #eee;
+}
+
+.headerRight{
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 10rem 5rem 10rem;
+}
+
+#pradaQuote{
+    width: 35rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+#discountText{
+   font-weight: 900;
+   font-size: 4rem;
+   color: #fff;
+}
+
+#discountColor{
+    background-color: #E50030;
+}
+
+.headerTitle{
+    display: flex;
+    justify-content: center;
+}
+
+#headerTitleWhite{
+    position: absolute;
+    color: #fafafa;
+    padding-left: 3rem;
+    font-size: 20rem;
+}
+
+#headerTitleBlack{
+    position: absolute;
+    color: #2F2F2F;
+    font-size: 20rem;
+    padding-top: 1rem;
+}
+
+.headerBlock{
+    position: absolute;
+    width: 100%;
+}
+
+.collectionsPreview{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection1, .collection2, .collection3{
+    display: flex;
+}
+
+.collection1 img, .collection2 img, .collection3 img{
+    width: 30vw;
+}
+
+.collection1 p, .collection2 p, .collection3 p{
+    position: absolute;
+    margin: 3rem 0 0 2rem;
+    color: #fff;
+    font-weight: 200;
+    font-style: italic;
+}
