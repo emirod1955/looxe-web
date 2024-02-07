@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.productColor{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.titleColorLine{
+    display: flex;
+    align-items: center;
+}
+
+.productName{
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+#P1, #P2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60rem;
+    height: 60rem;
+    transition: .2s;
+}
+
+#P1{
+    background-image: url("../../assets/LooxeBlack/looxeBlackForward.png");
+}
+
+#P2{
+    background-image: url("../../assets/LooxeAngel/looxeAngelForward.png");
+}
+
+#P2:hover{
+    background-image: url("../../assets/LooxeAngel/looxeAngelBack.png");
+    transition: .2s;
+}
+
+#P1:hover{
+    background-image: url("../../assets/LooxeBlack/looxeBlackBack.png");
+    transition: .2s;
+}

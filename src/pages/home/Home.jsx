@@ -1,9 +1,15 @@
 import './Home.css';
 
+//import react router
+import { Link } from 'react-router-dom';
+
 //import img
 import winter2024 from '../../assets/winter2024.jpg';
 import summer2025 from '../../assets/summer2025.jpg';
 import winter2025 from '../../assets/winter2025.jpg';
+
+//import components
+import { Product } from '../../components/Product/Product';
 
 
 const Header = () =>{
@@ -27,22 +33,12 @@ const Header = () =>{
     );
 }
 
-const CollectionsPreview = () =>{
+const Collection = ({img, text}) =>{
     return(
-        <section className='collectionsPreview'>
-            <div className='collection1'>
-                <img src={winter2024} alt="Winter 2024 collection" />
-                <p>2024 winter collection</p>
-            </div>
-            <div className="collection2">
-                <img src={summer2025} alt="Summer 2025 collection" />
-                <p>2025 summer collection</p>
-            </div>
-            <div className="collection3">
-                <img src={winter2025} alt="Winter 2025 collection" />
-                <p>2025 winter collection</p>
-            </div>
-        </section>
+        <div className='collection'>
+            <img src={img} alt="Collection image" />
+            <p>{text}</p>
+        </div>
     );
 }
 
@@ -50,7 +46,21 @@ const Home = () =>{
     return(
         <div className='home'>
             <Header />
-            <CollectionsPreview />
+            <section className='collectionsPreview'>
+                <Collection img={winter2024} text="2024 winter collection"/>
+                <Collection img={summer2025} text="2025 summer collection"/>
+                <Collection img={winter2025} text="2025 winter collection"/>
+            </section>
+            <div className='newReleasesBackground'></div>
+            <div className='newArrivals'>
+                <div className='newArrivalsBox'>
+                    <span className='newArrivalsTitle'><h2>NEW ARRIVALS</h2></span>
+                    <div className='productsList'>
+                        <Product imgID={"P1"} name="LOOXE BLACK" color="#000" price="890" link="/help"/>
+                        <Product imgID={"P2"} name="LOOXE ANGEL" color="#fff" price="890" link="/help"/>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

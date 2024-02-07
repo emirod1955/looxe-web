@@ -1,13 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 .footerBottom{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #000;
     color: #fff;
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    height: 5vh;
+}
+
+.footerBottomLooxe{
+    position: absolute;
     font-weight: 900;
     font-size: 2rem;
-    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBottomAuth{
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerBottomMadeBy{
+    font-size: 1.2rem;
+    margin-left: 5rem;
+    z-index: 1;
+}
+
+.footerBottomPay{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 5rem;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.footerBottomPay span{
+    display: flex;
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 0.3rem .5rem;
+}
+
+.footerBottomPay img{
+    width: 5rem;
 }

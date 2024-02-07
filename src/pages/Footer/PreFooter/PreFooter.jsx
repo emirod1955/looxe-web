@@ -14,25 +14,24 @@ import tiktok from './assets/tiktok.svg';
 
 
 const PreFooter = () =>{
+
+    const PreFooterBox = ({img, title, text}) =>{
+        return(
+            <div className='preFooterBox'>
+                <img src={img} alt="truck" />
+                <h4>{title}</h4>
+                <p>{text}</p>
+            </div>
+        );
+    }
+
     return(
         <div className='preFooter'>
             <hr />
             <div className='preFooterBoxes'>
-                <div className='preFooterBox'>
-                    <img src={truck} alt="truck" />
-                    <h4>FREE SHIPPING</h4>
-                    <p>If your purchase exceeds $2000 you have free shipping within the country</p>
-                </div>
-                <div className='preFooterBox'>
-                    <img src={card} alt="card" />
-                    <h4>PAY AS YOU WANT</h4>
-                    <p>We accept payment online or in cash</p>
-                </div>
-                <div className='preFooterBox'>
-                    <img src={padlock} alt="padlock" />
-                    <h4>SAFE DATA</h4>
-                    <p>Don't worry, your data is more than safe.</p>
-                </div>
+                <PreFooterBox img={truck} title="FREE SHIPPING" text="If your purchase exceeds $2000 you have free shipping within the country"/>
+                <PreFooterBox img={card} title="PAY AS YOU WANT" text="We accept payment online or in cash"/>
+                <PreFooterBox img={padlock} title="SAFE DATA" text="Don't worry, your data is more than safe."/>
             </div>
             <hr />
             <div className='footerNavigation'>
@@ -41,8 +40,8 @@ const PreFooter = () =>{
                     <p id='contactMail'>help@looxe.com</p>
                     <div className='socialNetworks'>
                         <Link to="https://www.instagram.com/" target='_blank'><img src={instagram} alt="instagram" /></Link>
-                        <Link to="https://twitter.com/"><img src={twitter} alt="twitter" /></Link>
-                        <Link to="https://www.tiktok.com/"><img src={tiktok} alt="tiktok" /></Link>
+                        <Link to="https://twitter.com/" target='_blank'><img src={twitter} alt="twitter" /></Link>
+                        <Link to="https://www.tiktok.com/" target='_blank'><img src={tiktok} alt="tiktok" /></Link>
                     </div>
                 </div>
                 <div className='footerNavigationColumn'>
