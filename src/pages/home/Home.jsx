@@ -1,8 +1,5 @@
 import './Home.css';
 
-//import react router
-import { Link } from 'react-router-dom';
-
 //import img
 import winter2024 from '../../assets/winter2024.jpg';
 import summer2025 from '../../assets/summer2025.jpg';
@@ -14,7 +11,7 @@ import { Product } from '../../components/Product/Product';
 
 const Header = () =>{
     return(
-        <header>
+        <header className='homeHeader'>
             <div className='headerBackground'>
                 <span className='headerLeft'></span>
                 <span className='headerRight'></span>
@@ -51,13 +48,27 @@ const Home = () =>{
                 <Collection img={summer2025} text="2025 summer collection"/>
                 <Collection img={winter2025} text="2025 winter collection"/>
             </section>
-            <div className='newReleasesBackground'></div>
+            <div className='newReleasesBackground'>NEW RELEASES NEW RELEASES NEW RELEASES</div>
             <div className='newArrivals'>
                 <div className='newArrivalsBox'>
                     <span className='newArrivalsTitle'><h2>NEW ARRIVALS</h2></span>
                     <div className='productsList'>
-                        <Product imgID={"P1"} name="LOOXE BLACK" color="#000" price="890" link="/help"/>
-                        <Product imgID={"P2"} name="LOOXE ANGEL" color="#fff" price="890" link="/help"/>
+                        <Product 
+                            imgID={"P1"} 
+                            name="LOOXE BLACK" 
+                            color="#000" 
+                            price="890" 
+                            link="/help" 
+                            sizes={["S", "M", "L", "XL", "XXL"]}
+                        />
+                        <Product 
+                            imgID={"P2"} 
+                            name="LOOXE ANGEL" 
+                            color="#fff" 
+                            price="890" 
+                            link="/help" 
+                            sizes={["S", "M", "L", "XL", "XXL"]}
+                        />
                     </div>
                 </div>
             </div>

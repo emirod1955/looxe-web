@@ -2,17 +2,20 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 
+//import fonts & general styles
+import './components/index.css';
+
 //import react router
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
 //import components
 import { NavBar } from './pages/navbar/NavBar.jsx';
-import { Home } from './pages/home/Home.jsx';
-import { Help } from './pages/help/Help.jsx';
-import { Collections } from './pages/collections/Collections.jsx';
+  import { Home } from './pages/home/Home.jsx';
+  import { Help } from './pages/help/Help.jsx';
+  import { Collections } from './pages/collections/Collections.jsx';
 import { PreFooter } from "./pages/Footer/PreFooter/PreFooter.jsx";
 import { Footer } from "./pages/Footer/Footer.jsx";
-  
+
   //import error page
   import ErrorPage from './pages/error-page/ErrorPage.jsx';
 
@@ -27,7 +30,7 @@ const ComponentsWrapperPreFooter = () =>{
   );
 }
 
-const ComponentsWrapperFooter = () =>{
+const ComponentsWrapperHelp = () =>{
   return(
     <div>
       <NavBar/>
@@ -55,7 +58,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/help",
-    element: <ComponentsWrapperFooter/>
+    element: <ComponentsWrapperHelp/>
   },
 ]);
 

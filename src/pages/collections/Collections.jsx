@@ -3,7 +3,7 @@ import './Collections.css';
 const Collections = () =>{
     return(
         <div>
-            Collections
+            COLLECTIONS
         </div>
     );
 }

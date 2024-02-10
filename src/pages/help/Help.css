@@ -1,0 +1,91 @@
+.helpPage{
+    height: 86vh;
+}
+
+.helpCard{
+    display: flex;
+    gap: 2rem;
+    border: 1px solid #000;
+    background: #fafafa;
+    padding: 2rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.helpCard img{
+    width: 3rem;
+}
+
+.helpCardInfo{
+    width: 20rem;
+}
+
+.quickHelpBlocks{
+    display: flex;
+    gap: 5rem;
+}
+
+.quickHelp{
+    height: 36vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8rem;
+
+}
+
+.quickHelp h2{
+    margin-bottom: 2rem;
+}
+
+.helpCenter{
+    color: #fff;
+    margin-left: 10rem;
+}
+
+.helpPage header{
+    background: #000;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+
+.helpCenterInputs{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.helpCenterTitle h1{
+    font-size: 5rem;
+}
+
+.helpCenterTitle p{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+#helpCenterInputsEmail{
+    padding: 1rem;
+}
+
+#helpCenterInputsQuestion{
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+#helpCenterInputsSubmit{
+    padding: 1rem 2rem;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#helpCenterInputsSubmit:hover{
+    background: #fff;
+    color: #000;
+    transition: .5s;
+}

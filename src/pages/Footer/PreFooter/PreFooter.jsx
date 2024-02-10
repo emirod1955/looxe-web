@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import './PreFooter.css';
 
 //import img
-import truck from './assets/truck.svg';
-import card from './assets/card.svg';
+import truck from '../../../assets/icon/truck.svg';
+import card from '../../../assets/icon/card.svg';
 import padlock from './assets/padlock.svg';
 import instagram from './assets/instagram.svg';
 import twitter from './assets/twitter.svg';
