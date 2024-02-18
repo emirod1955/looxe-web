@@ -17,7 +17,7 @@ const Footer = () =>{
     }
     return(
         <footer className='footerBottom'>
-            <p className='footerBottomMadeBy'>Made by <Link className='footerBottomAuth' to="https://twitter.com/im_EmiRod">Emiliano Rodriguez</Link></p>
+            <p className='footerBottomMadeBy'>Made by <Link className='footerBottomAuth' to="https://twitter.com/im_EmiRod" target='_blank'>Emiliano Rodriguez</Link></p>
             <p className='footerBottomLooxe'>&copy; LOOXE</p>
             <div className='footerBottomPay'>
                 <p>We accept</p>

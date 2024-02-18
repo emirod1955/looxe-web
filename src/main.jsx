@@ -3,7 +3,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 
 //import fonts & general styles
-import './components/index.css';
+import './assets/index.css';
 
 //import react router
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";

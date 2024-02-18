@@ -4,24 +4,30 @@ import './Product.css'
 //import react router
 import { Link } from 'react-router-dom';
 
-const Product = ({imgID, name, color, price, link, sizes}) =>{
+//import database
+import data from "../../types/products.json"
+
+const Product = ({productCode}) =>{
     let sizesResult = []; 
  
-    sizes.forEach(size =>{
+    data[productCode].sizes.forEach(size =>{
         sizesResult.push(
-            <span className='size'>{size}</span>
+            <div className='sizeText'>
+                {size}
+                <span className='tooltipSize'>quick add</span>
+            </div>
         );
     });
     return(
         <article className='products'>
-            <Link to={link} id={imgID}></Link>
+            <Link to={data[productCode].link} id={data[productCode].imgID}></Link>
             <div className='productInfo'>
                 <div className='productInfoLeft'>
                     <div className='ProductNameColorLine'>
-                        <p className='productName'>{name}</p>
-                        <span className='productColor' style={{ background: color}}></span>
+                        <p className='productName'>{data[productCode].name}</p>
+                        <span className='productColor' style={{ background: data[productCode].color}}></span>
                     </div>
-                    <sapn>${price}</sapn>
+                    <sapn>${data[productCode].price}</sapn>
                 </div>
                 <div className='sizes'>
                     {sizesResult}

@@ -53,22 +53,8 @@ const Home = () =>{
                 <div className='newArrivalsBox'>
                     <span className='newArrivalsTitle'><h2>NEW ARRIVALS</h2></span>
                     <div className='productsList'>
-                        <Product 
-                            imgID={"P1"} 
-                            name="LOOXE BLACK" 
-                            color="#000" 
-                            price="890" 
-                            link="/help" 
-                            sizes={["S", "M", "L", "XL", "XXL"]}
-                        />
-                        <Product 
-                            imgID={"P2"} 
-                            name="LOOXE ANGEL" 
-                            color="#fff" 
-                            price="890" 
-                            link="/help" 
-                            sizes={["S", "M", "L", "XL", "XXL"]}
-                        />
+                        <Product productCode="01"/>
+                        <Product productCode="02"/>
                     </div>
                 </div>
             </div>

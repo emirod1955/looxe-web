@@ -23,7 +23,7 @@
 .headerRight{
     width: 50%;
     height: 100%;
-    background-color: #000;
+    background-color: #302B27;
 }
 
 .headerContent{
@@ -57,14 +57,16 @@
     position: absolute;
     color: #fafafa;
     padding-left: 3rem;
-    font-size: 20rem;
+    font-size: 25rem;
+    letter-spacing: 5rem;
 }
 
 #headerTitleBlack{
     position: absolute;
     color: #2F2F2F;
-    font-size: 20rem;
+    font-size: 25rem;
     padding-top: 1rem;
+    letter-spacing: 5rem;
 }
 
 .headerBlock{
@@ -110,7 +112,7 @@
 }
 
 .newArrivalsTitle{
-    background-color: #000;
+    background-color: #1B264F;
     color: #fff;
     width: max-content;
     padding: 1rem 3rem;
