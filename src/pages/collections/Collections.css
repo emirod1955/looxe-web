@@ -1,0 +1,38 @@
+.collectionsCard img{
+    width: 20vw;
+    margin-bottom: 1rem;
+}
+
+.collectionsCards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.collectionsCardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.collectionsCardInfo h2{
+    font-weight: 600;
+}
+
+.collectionsCardInfo input{
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 1px solid #000;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.collectionsCardInfo input:hover{
+    background-color: #302B27;
+    color: #fff;
+    transition: .2s;
+    border: 1px solid #302B27;
+}

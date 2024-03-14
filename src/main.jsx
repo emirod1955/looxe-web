@@ -13,6 +13,7 @@ import { NavBar } from './pages/navbar/NavBar.jsx';
   import { Home } from './pages/home/Home.jsx';
   import { Help } from './pages/help/Help.jsx';
   import { Collections } from './pages/collections/Collections.jsx';
+  import { ProductList } from "./pages/ProductsList/ProductList.jsx";
 import { PreFooter } from "./pages/Footer/PreFooter/PreFooter.jsx";
 import { Footer } from "./pages/Footer/Footer.jsx";
 
@@ -29,8 +30,8 @@ const ComponentsWrapperPreFooter = () =>{
     </div>
   );
 }
-
-const ComponentsWrapperHelp = () =>{
+ 
+const ComponentsWrapper = () =>{
   return(
     <div>
       <NavBar/>
@@ -51,14 +52,24 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path:"/collections",
+        path: "/collections",
         element: <Collections/>
+      },
+      {
+        path: "/products",
+        element: <ProductList/>
       }
     ]
   },
   {
-    path: "/help",
-    element: <ComponentsWrapperHelp/>
+    path: "/",
+    element: <ComponentsWrapper/>,
+    children:[
+      {
+        path: "/help",
+        element: <Help/>
+      }
+    ]
   },
 ]);
 

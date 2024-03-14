@@ -24,7 +24,7 @@ body{
 
 .preFooterBoxes{
      display: flex;
-     justify-content: space-around;
+     justify-content: space-evenly;
      padding: 5rem 0;
 }
 

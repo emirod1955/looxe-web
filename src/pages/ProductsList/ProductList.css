@@ -1,0 +1,57 @@
+.productList{
+    display: flex;
+}
+
+.productListProducts{
+    display: flex;
+    gap: 5rem;
+    padding: 5rem;
+    flex-wrap: wrap;
+}
+
+.productListFilters{
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.productListFilters h3{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.productListFilters-price-Inputs{
+    display: flex;
+    gap: 1rem;
+}
+
+.productListFilters-price-Input{
+    border: none;
+    width: 10rem;
+    padding: .5rem 2rem .5rem .5rem;
+    font-size: 1.4rem;
+}
+
+#productListFilters-price-InputSubmit{
+    border: none;
+    background: #302b27;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.productListFilters-color{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.productListFilters label{
+    font-weight: 300;
+}
+
+.productListFilters p{
+    margin-bottom: 1rem;
+}

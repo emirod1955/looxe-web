@@ -32,7 +32,7 @@
     display: flex;
 }
 
-#P01, #P02{
+#P0, #P1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,20 +41,20 @@
     transition: .2s;
 }
 
-#P01{
+#P0{
     background-image: url("../../assets/LooxeBlack/looxeBlackForward.png");
 }
 
-#P02{
+#P1{
     background-image: url("../../assets/LooxeAngel/looxeAngelForward.png");
 }
 
-#P02:hover{
+#P1:hover{
     background-image: url("../../assets/LooxeAngel/looxeAngelBack.png");
     transition: .2s;
 }
 
-#P01:hover{
+#P0:hover{
     background-image: url("../../assets/LooxeBlack/looxeBlackBack.png");
     transition: .2s;
 }
@@ -62,7 +62,7 @@
 .tooltipSize{
     display: none;
     position: absolute;
-    background: #1B264F;
+    background: #7c6f65;
     color: #fff;
     padding: .5rem 1rem;
     margin-bottom: 3rem;
@@ -81,5 +81,4 @@
 
 .sizeText:hover .tooltipSize{
     display: flex;
-    
 }

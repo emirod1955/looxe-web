@@ -5,10 +5,9 @@ import winter2024 from '../../assets/winter2024.jpg';
 import summer2025 from '../../assets/summer2025.jpg';
 import winter2025 from '../../assets/winter2025.jpg';
 
-//import components
+// import components
 import { Product } from '../../components/Product/Product';
-
-
+ 
 const Header = () =>{
     return(
         <header className='homeHeader'>
@@ -40,6 +39,7 @@ const Collection = ({img, text}) =>{
 }
 
 const Home = () =>{
+
     return(
         <div className='home'>
             <Header />
@@ -53,8 +53,8 @@ const Home = () =>{
                 <div className='newArrivalsBox'>
                     <span className='newArrivalsTitle'><h2>NEW ARRIVALS</h2></span>
                     <div className='productsList'>
-                        <Product productCode="01"/>
-                        <Product productCode="02"/>
+                        <Product productCode={0}/>
+                        <Product productCode={1}/>
                     </div>
                 </div>
             </div>

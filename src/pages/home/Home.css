@@ -9,7 +9,7 @@
 
 .headerBackground{
     width: 100%;
-    height: 70vh;
+    height: 65rem;
     display: flex;
     z-index: -1;
 }
@@ -112,7 +112,7 @@
 }
 
 .newArrivalsTitle{
-    background-color: #1B264F;
+    background-color: #302B27;
     color: #fff;
     width: max-content;
     padding: 1rem 3rem;

@@ -1,19 +1,24 @@
 {
-    "01":{
-        "name": "LOOXE BLACK",
-        "color": "#000",
-        "price": 890,
-        "sizes": ["S", "M", "L", "XL", "XXL"],
-        "imgID": "P01",
-        "link": "/help"
-    },
-
-    "02":{
-        "name": "LOOXE ANGEL",
-        "color": "#fff",
-        "price": 890,
-        "sizes": ["S", "M", "L", "XL", "XXL"],
-        "imgID": "P02",
-        "link": "/help"
-    }
+    "products":[
+        {
+            "id" : 0,
+            "name": "LOOXE BLACK",
+            "color": "Black",
+            "colorCode": "#000",
+            "price": 890,
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "imgID": "P0",
+            "link": "/help"
+        },
+        {
+            "id": 1,
+            "name": "LOOXE ANGEL",
+            "color": "White",
+            "colorCode": "#fff",
+            "price": 890,
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "imgID": "P1",
+            "link": "/help"
+        }
+    ]
 }

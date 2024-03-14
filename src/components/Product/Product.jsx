@@ -1,16 +1,17 @@
-//import styles
-import './Product.css'
-
 //import react router
 import { Link } from 'react-router-dom';
+
+//import styles
+import './Product.css'
 
 //import database
 import data from "../../types/products.json"
 
 const Product = ({productCode}) =>{
+
     let sizesResult = []; 
- 
-    data[productCode].sizes.forEach(size =>{
+    
+    data.products[productCode].sizes.forEach(size =>{
         sizesResult.push(
             <div className='sizeText'>
                 {size}
@@ -18,16 +19,17 @@ const Product = ({productCode}) =>{
             </div>
         );
     });
+
     return(
         <article className='products'>
-            <Link to={data[productCode].link} id={data[productCode].imgID}></Link>
+            <Link to={data.products[productCode].link} id={data.products[productCode].imgID}></Link>
             <div className='productInfo'>
                 <div className='productInfoLeft'>
                     <div className='ProductNameColorLine'>
-                        <p className='productName'>{data[productCode].name}</p>
-                        <span className='productColor' style={{ background: data[productCode].color}}></span>
+                        <p className='productName'>{data.products[productCode].name}</p>
+                        <span className='productColor' style={{ background: data.products[productCode].color}}></span>
                     </div>
-                    <sapn>${data[productCode].price}</sapn>
+                    <sapn>${data.products[productCode].price}</sapn>
                 </div>
                 <div className='sizes'>
                     {sizesResult}
