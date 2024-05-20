@@ -10,10 +10,12 @@ import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
 //import components
 import { NavBar } from './pages/navbar/NavBar.jsx';
+  
   import { Home } from './pages/home/Home.jsx';
   import { Help } from './pages/help/Help.jsx';
   import { Collections } from './pages/collections/Collections.jsx';
   import { ProductList } from "./pages/ProductsList/ProductList.jsx";
+
 import { PreFooter } from "./pages/Footer/PreFooter/PreFooter.jsx";
 import { Footer } from "./pages/Footer/Footer.jsx";
 
